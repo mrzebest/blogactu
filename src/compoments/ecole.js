@@ -22,12 +22,12 @@ function Ecole() {
   }, []);
 
   return (
-    <Container>
+    <Container  >
       <Row>
         {data ? data.map((item) => (
-          <Col md={4} key={item.id}>
+          <Col  md={4} key={item.id }>
             <Card className='img-fluid'> 
-              <Card.Img variant="top" style={{width: '40%', margin:'auto'}} /> 
+              <Card.Img variant="top" /> 
               <Card.Body> 
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.content.substring(0, 100)}</Card.Text>
@@ -36,6 +36,9 @@ function Ecole() {
             </Card>
           </Col>  
         )) : null}
+
+        <Col style={{marginBottom :'80px'}}>
+        </Col>
       </Row>
     </Container>
   );

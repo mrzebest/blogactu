@@ -13,8 +13,8 @@ function Corps() {
     
         <div className='full-width'>
         <Banner/>
-        <Container className='corps'>
-          <div>
+        <Container className='corps' >
+          <div >
               <h1>Liste des Articles</h1>
           </div>
           <Ecole/>
