@@ -31,7 +31,6 @@ function Ecole() {
               <Card.Body> 
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.content.substring(0, 100)}</Card.Text>
-                <Card.Text>{item.user_id}</Card.Text>
                 <a className='btn btn-outline-dark space' href={"/ecole/"+item._id}>Voir plus</a>
               </Card.Body>
             </Card>
